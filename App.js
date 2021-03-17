@@ -1,12 +1,13 @@
 import '/Users/L-Hodges/my-app/src/index.css';
 
-import Todolist from './components/Todolist';
+
+import Form from './components/Form';
 
 function App() {
   return (
-    <div className="todo-app">
-      <h1>ToDo App</h1>
-      <Todolist />
+    <div className="form-app">
+      <h1>Contact Form</h1>
+      <Form />
     </div>
   );
 }
