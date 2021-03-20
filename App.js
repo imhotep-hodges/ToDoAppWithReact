@@ -1,3 +1,4 @@
+import 'tailwindcss/tailwind.css';
 import '/Users/L-Hodges/my-app/src/index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Pages/Navbar';

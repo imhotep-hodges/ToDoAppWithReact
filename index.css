@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Permanent+Marker&family=Roboto:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  
 }
 
 body {
@@ -20,12 +21,13 @@ body {
 
 .wrapper {
   display: flex;
-  position: relative;
+  position: fixed;
   
 }
 
 .wrapper .navbar {
   position: fixed;
+  float: right;
   width: 250px;
   height: 100%;
   background-color: black;
@@ -35,20 +37,33 @@ body {
 
 .nav-links {
   margin: 50px;
+  padding-bottom: 10%;
   color: #c21414;
-  font-size: larger;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+
 }
 
 .navBrand {
   margin: 20px;
+  font-family: 'Fugaz One', cursive;
 }
 
 /* ---- Content Styles  ------ */
 
 .content-a {
-  width: 1100px;
-  margin: 0 auto;
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  position: relative;
+  float: right;
+}
+
+.welcomeHome {
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .todo-app {
