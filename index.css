@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
@@ -9,14 +11,34 @@
 body {
   background: linear-gradient(
     90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgba(100, 115, 255, 1) 100%
+    rgb(159, 158, 165) 0%,
+    rgb(25, 26, 27) 100%
   );
 }
+
+.wrapper {
+  display: flex;
+  position: relative;
+  
+}
+
+.wrapper .navbar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  padding: 30px 0;
+}
+
+.content-a {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 .todo-app {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content:start;
   width: 520px;
   min-height: 600px;
   background: #161a2b;
@@ -24,6 +46,7 @@ body {
   margin: 128px auto;
   border-radius: 10px;
   padding-bottom: 32px;
+  
 }
 
 h1 {
@@ -148,3 +171,6 @@ h1 {
 
 /* Form CSS start */
 
+.form-app {
+  
+}
