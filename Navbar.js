@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import '/Users/L-Hodges/my-app/src/index.css';
+
+
+
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -9,16 +11,14 @@ function Navbar() {
     const handleClick = () => setClick(!click);
 
     return (
-        <div>
+        <div className="wrapper">
           <div className="navbar">
             <div className="nav-container">
             
-                <Link to="/" className="navlinks">
-                ToDo App
-                </Link>
-                <div className="menu-icon" onClick={handleClick} >
-                {click ? <FaTimes /> : <FaBars />}
-                </div>
+                <h1 className="navBrand">
+                Larry's ToDo App! 
+                </h1>
+                
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
                        <Link to="/" className="nav-links">
@@ -26,7 +26,7 @@ function Navbar() {
                        </Link> 
                     </li>
                     <li className="nav-item">
-                       <Link to="/Test.js" className="nav-links">
+                       <Link to="/Todolist.js" className="nav-links">
                        ToDo List
                        </Link> 
                     </li>
