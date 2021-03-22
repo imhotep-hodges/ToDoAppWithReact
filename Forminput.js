@@ -6,17 +6,17 @@ const FormInput = ({submitForm}) => {
     const {handleChange, values, handleSubmit, errors} = useForm(submitForm, validate); 
 
     return (
-        <div className="form-content-right">
+        <div className="blackboard">
             
             <form className="form1" onSubmit={handleSubmit}>
                 <h1>Leave me some Feedback!</h1>
 
                 <div className="form-inputs">
                     <label htmlFor="firstname" className="form-label">
-                    First Name
+                    First Name:
                     </label>
                         <input type="text" name="firstname" className="form-input" 
-                        placeholder="First Name"
+                        placeholder="Enter here"
                         value={values.firstname}
                         onChange={handleChange}
                         />
@@ -28,10 +28,10 @@ const FormInput = ({submitForm}) => {
 
                 <div>
                 <label htmlFor="lastname" className="form-label">
-                Last Name
+                Last Name:
                 </label>
                     <input type="text" name="lastname" className="form-input" 
-                    placeholder="Last Name"
+                    placeholder="Enter here"
                     value={values.lastname}
                     onChange={handleChange}
                     />
@@ -43,10 +43,10 @@ const FormInput = ({submitForm}) => {
                 <div className="form-inputs">
                 
                     <label htmlFor="email" className="form-label">
-                    Email
+                    Email:
                     </label> 
                     <input type="email" name="email" id="email" className="form-input" 
-                    placeholder="Email"
+                    placeholder="Enter here"
                     value={values.email}
                     onChange={handleChange}
                     />
@@ -57,10 +57,10 @@ const FormInput = ({submitForm}) => {
 
                 <div className="form-inputs">
                     <label htmlFor="textbox" className="form-label">
-                    Message
+                    Message:
                     </label>
                     <textarea type="text" name="textbox" className="form-input" 
-                    placeholder="Enter Message" rows="4" cols="50"
+                    placeholder="Enter here" rows="4" cols="50"
                     value={values.textbox}
                     onChange={handleChange}
                     >
@@ -70,7 +70,12 @@ const FormInput = ({submitForm}) => {
                 </div>
 
                 
-                <button type="submit" className="form-button">Submit</button>
+                <div className="formsubmit">
+                <p className="form-input">
+								<input id="formbutton" type="submit" value="Send" />
+						</p>
+                
+                </div>
                 
 
             </form>
