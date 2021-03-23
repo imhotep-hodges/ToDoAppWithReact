@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import Todoform from './Todoform';
-import Todo from './Todo';
+import Todoform from '/Users/L-Hodges/my-app/src/components/Todoform';
+import Todo from '/Users/L-Hodges/my-app/src/components/Todo';
 
 function Todolist() {
     const [todos, setTodos] = useState([]);
@@ -57,4 +57,4 @@ function Todolist() {
     );
 }
 
-export default Todolist
+export default Todolist;

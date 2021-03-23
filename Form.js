@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import FormInput from './Forminput';
-import FormSuccess from './Formsuccess';
+import FormInput from '/Users/L-Hodges/my-app/src/components/Forminput';
+import FormSuccess from '/Users/L-Hodges/my-app/src/components/Formsuccess';
 
 
 const Form = () => {

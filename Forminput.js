@@ -1,6 +1,6 @@
 import React from 'react';
-import useForm from './useForm';
-import validate from './validate';
+import useForm from '/Users/L-Hodges/my-app/src/components/useForm';
+import validate from '/Users/L-Hodges/my-app/src/components/validate';
 
 const FormInput = ({submitForm}) => {
     const {handleChange, values, handleSubmit, errors} = useForm(submitForm, validate); 
